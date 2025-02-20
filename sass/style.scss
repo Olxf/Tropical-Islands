@@ -302,12 +302,12 @@ body {
 
 
 			&-title{
+				font-family: 'Dancing Script', cursive;
 				position: absolute;
 				left: 50%;
 				transform: translateX(-50%);
-				top: 1.2em;
-				font-family: 'Dancing Script', cursive;
-				font-size: 4rem;
+				top: 0.8em;
+				font-size: 5rem;
 			}
 
 			&-list{
@@ -316,8 +316,8 @@ body {
 				list-style: none;
 
 				&-item{
-					padding: 1em;
-					font-size: 1.4rem;
+					padding: 0.8em;
+					font-size: 1.7rem;
 					border-bottom: 1px solid $light-white;
 
 					&:last-child{
@@ -346,6 +346,65 @@ body {
 
 }
 
+//OFFERS
+
+.offers{
+	position: relative;
+	@include heroImages('../img/maldives640.jpg');
+	overflow: hidden;
+
+	.section-title{
+		color: $pure-white;
+	}
+
+	&__option{
+		margin: 1em 0;
+		box-shadow: 5px 5px 10px #2e2e2e2e;
+		background-color: $pure-white;
+		overflow: hidden;
+
+		&-img{
+			width: 100%;
+			transition: transform .3s;
+
+			&:hover{
+				transform: scale(1.1);
+			}
+		}
+		
+		&-info{
+			padding: 2em;
+		}
+
+		&-title{
+			margin-bottom: 0.5em;
+			font-size: 2.4rem;
+			font-weight: 300;
+		}
+
+		&-text{
+			margin-bottom: 0.5em;
+			font-size: 1.3rem;
+			color: $dark;
+		}
+
+		&-btn{
+			margin-top: 1em;
+			padding: 0.8em;
+			width: 100%;
+			color: $pure-white;
+			background-color: $main-color;
+			border: none;
+			border-radius: 8px;
+			cursor: pointer;
+
+			&::before{
+				background-color: $secondary-color;
+			}
+		}
+	}
+
+}
 
 
 
@@ -380,6 +439,38 @@ body {
 
 
 
+	}
+
+	.offers{
+		&__option{
+			display: flex;
+			margin: 2em 0;
+			width: 100%;
+
+			&-img{
+				width: 50%;
+				height: auto;
+
+				&--right{
+					order: 1;
+				}
+			}
+
+			&-info{
+				display: flex;
+				flex-direction: column;
+				justify-content: space-between;
+			}
+
+			&-title{
+				margin-bottom: 0.5em;
+				font-size: 3.6rem;
+			}
+
+			&-btn{
+				padding: 1em;
+			}
+		}
 	}
 }
 
@@ -495,10 +586,21 @@ body {
 			width: 60%;
 			max-width: 900px;
 		}
+	}
 
+	.offers{
+		background-image: $blue-gradient, url('../img/maldives1280.jpg');
 
+		&__option{
+			&-img{
+				object-fit: cover;
+				height: 300px;
+			}
 
-		
+			&-text{
+				font-size: 1.5rem;
+			}
+		}
 	}
 
 }
@@ -507,7 +609,14 @@ body {
 	.islands{
 		&__card{
 			width: 30%;
+
+			&-info{
+				&-title{
+					font-size: 3.2rem;
+				}
+			}
 		}
+
 	}
 }
 
