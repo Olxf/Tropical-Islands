@@ -341,7 +341,7 @@ body {
   left: 50%;
   transform: translateX(-50%);
   top: 0.8em;
-  font-size: 5rem;
+  font-size: 3rem;
 }
 .islands__card-info-list {
   margin: 0 auto;
