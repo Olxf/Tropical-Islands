@@ -1,3 +1,3 @@
 <!-- # Tropical-Islands -->
 
-https://olxf.github.io/Tropical-Islands/
+https://codiv1.github.io/Tropical-Islands/
